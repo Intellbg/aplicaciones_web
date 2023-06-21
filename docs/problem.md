@@ -1,0 +1,2 @@
+# Musync
+DjMusic.sas es una PYME dedicada a la venta de equipos de audio para DJ's. Para brindar un soporte a nuevos clientes la administración desea crear una aplicación web llamada Musync en donde los clientes pueden registrarse y crear listas de reproducción publicas las cuales pueden ser utilizadas como referencia para que otros usuarios puedan verlas y servir de inspiración para crear nuevas listas. 
