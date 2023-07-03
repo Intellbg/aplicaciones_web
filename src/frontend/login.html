@@ -23,28 +23,28 @@
         <div class="login_div d-flex align-items-center ">
             <h1>Inicia sesión</h1>
             <form>
-
                 <div class="form-group">
                     <label for="email">Email o nombre del usuario</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                        placeholder="Email o nombre del usuario">
+                    <input type="text" class="form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="Email o nombre del usuario" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Contraseña</label>
-                    <input type="password" class="form-control" id="password" placeholder="">
+                    <input type="password" class="form-control" id="password" placeholder="" required>
                 </div>
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" role="switch" id="remember" checked>
                     <label class="form-check-label" for="remember">Recordarme</label>
                 </div>
-                <button type="submit" class="btn btn-primary text-center w-100">Iniciar
+                <div class="alert alert-danger" role="alert" id="loginError" hidden></div>
+
+                <button type="submit" class="btn btn-primary text-center w-100" id="login_button">Iniciar
                     Sesión</button>
                 <div class="text-center">
                     <br>
                     <a class="form" data-bs-toggle="modal" data-bs-target="#password_modal">
                         ¿Has olvidado tu contraseña?
                     </a>
-                    <a href="./main.html">sa</a>
                     <p class="muted-text">¿No tienes cuenta?</p>
                     <a href="./singup.html" class="form">Regístrate en Musync</a>
                 </div>
@@ -73,14 +73,13 @@
 
                         <form action="">
                             <div class="form-group">
-                                <label for="email">Email o nombre del usuario</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                    placeholder="Email o nombre del usuario">
+                                <label for="email_password">Email o nombre del usuario</label>
+                                <input type="email_password" class="form-control" id="email_password"
+                                    aria-describedby="emailHelp" placeholder="Email o nombre del usuario">
                             </div>
                         </form>
                         <div class="text-center">
-
-                            <button type="submit" class="btn btn-primary ">Enviar</button>
+                            <button type="submit" class="btn btn-primary" id="password_reset_button">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -89,6 +88,8 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -98,13 +99,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-    <script>
-
-    </script>
+    <script src="js/auth.js"></script>
+    <script src="js/login.js"></script>
 </body>
-
-<script>
-
-</script>
 
 </html>
